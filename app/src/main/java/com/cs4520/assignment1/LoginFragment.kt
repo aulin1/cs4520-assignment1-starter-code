@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class LoginFragment : Fragment(R.layout.login_fragment){
 
@@ -23,9 +24,9 @@ class LoginFragment : Fragment(R.layout.login_fragment){
             if(username.text.toString().equals("admin") && password.text.toString().equals("admin")){
                 username.setText("")
                 password.setText("")
-                //switch to next view
+                findNavController().navigate(R.id.action_loginFragment_to_productListFragment)
             } else {
-               //display toast message
+               //TODO: display toast message
                 username.setText("")
                 password.setText("")
             }

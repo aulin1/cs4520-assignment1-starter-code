@@ -21,10 +21,13 @@ class LoginFragment : Fragment(R.layout.login_fragment){
         loginButton = view.findViewById(R.id.login_button)
         loginButton.setOnClickListener {
             if(username.text.toString().equals("admin") && password.text.toString().equals("admin")){
-                //empty the fields
+                username.setText("")
+                password.setText("")
                 //switch to next view
             } else {
                //display toast message
+                username.setText("")
+                password.setText("")
             }
         }
     }

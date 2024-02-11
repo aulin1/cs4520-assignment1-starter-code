@@ -7,7 +7,4 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 class LoginFragment : Fragment(R.layout.login_fragment){
-        //TODO: put something here
-        //TODO: check out viewbinding
-        //TODO: figure out navgraph
 }

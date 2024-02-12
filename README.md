@@ -9,10 +9,9 @@ Additional Information:
 
 The application will begin on the login screen. Unless the correct username and password combo is entered, the app will not continue to the next screen. The correct username and password combination is: "admin" and "admin" (no capitals).
 
-On the products screen... (TBA)
+Once logged in, the application will show the products screen. Scroll through to see all the products.
 Back button functionality... (TBA)
 
 TODO:
 Back button functionality
-ProductListFragment functionality
 Update Readme

@@ -18,11 +18,7 @@ class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         when(item){
             is Product.FoodProduct -> {
                 name_text.text = item.name
-                if(item.expiry == "null"){
-                    exp_date.visibility = View.INVISIBLE
-                } else {
-                    exp_date.text = item.expiry
-                }
+                exp_date.text = item.expiry
                 val pricetext = "$" + item.price
                 item_price.text = pricetext
                 image.setImageResource(R.drawable.foodphoto)
@@ -30,11 +26,7 @@ class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
             }
             is Product.EquipmentProduct -> {
                 name_text.text = item.name
-                if(item.expiry == "null"){
-                    exp_date.visibility = View.INVISIBLE
-                } else {
-                    exp_date.text = item.expiry
-                }
+                exp_date.visibility = View.GONE
                 val pricetext = "$" + item.price
                 item_price.text = pricetext
                 image.setImageResource(R.drawable.equipmentphoto)
@@ -42,4 +34,5 @@ class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
             }
         }
     }
+
 }

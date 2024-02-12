@@ -25,7 +25,7 @@ class ProductListFragment : Fragment(R.layout.product_list_fragment) {
             Product.FoodProduct(product[0].toString(), product[2].toString(),
                 product[3] as Int)
         } else {
-            Product.EquipmentProduct(product[0].toString(), product[2].toString(),
+            Product.EquipmentProduct(product[0].toString(),
                 product[3] as Int)
         }
     }

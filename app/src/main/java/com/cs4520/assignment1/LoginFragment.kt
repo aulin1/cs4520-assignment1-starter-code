@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
@@ -26,9 +27,14 @@ class LoginFragment : Fragment(R.layout.login_fragment){
                 password.setText("")
                 findNavController().navigate(R.id.action_loginFragment_to_productListFragment)
             } else {
-               //TODO: display toast message
                 username.setText("")
                 password.setText("")
+
+                val text = "Username or password is incorrect."
+                val duration = Toast.LENGTH_SHORT
+
+                val toast = Toast.makeText(this.activity, text, duration)
+                toast.show()
             }
         }
     }

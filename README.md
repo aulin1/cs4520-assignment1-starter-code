@@ -11,3 +11,8 @@ The application will begin on the login screen. Unless the correct username and 
 
 On the products screen... (TBA)
 Back button functionality... (TBA)
+
+TODO:
+Back button functionality
+ProductListFragment functionality
+Update Readme
